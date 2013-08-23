@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/darker_gray">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="@dimen/activity_default_margin" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@android:style/TextAppearance.Medium"
+            android:layout_marginBottom="@dimen/activity_default_margin"
+            android:text="@string/who_label" />
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/activity_default_margin"
+            android:shrinkColumns="*"
+            android:stretchColumns="*">
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/activity_default_margin"
+                android:background="@android:color/white" >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="@dimen/activity_default_margin"
+                    android:text="@string/name_label"
+                    style="@android:style/TextAppearance.Small"
+                    android:layout_span="@integer/first_item_span" />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_span="@integer/second_item_span"
+                    android:gravity="center_vertical"
+                    style="@android:style/TextAppearance.Small"
+                    android:inputType="text"/>
+            </TableRow>
+
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/activity_default_margin"
+                android:background="@android:color/white">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="@dimen/activity_default_margin"
+                    android:text="@string/phone_label"
+                    style="@android:style/TextAppearance.Small"
+                    android:layout_span="2" />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_span="@integer/second_item_span"
+                    android:gravity="center_vertical"
+                    style="@android:style/TextAppearance.Small"
+                    android:inputType="phone" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/activity_default_margin"
+                android:background="@android:color/white">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:layout_span="@integer/first_item_span"
+                    android:paddingLeft="@dimen/activity_default_margin"
+                    android:text="@string/sex_label"
+                    style="@android:style/TextAppearance.Small"
+                    android:labelFor="@+id/question" />
+
+                <Spinner
+                    android:id="@+id/sex_spinner"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_span="@integer/second_item_span"
+                    android:entries="@array/sex_array"/>
+
+            </TableRow>
+
+        </TableLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@android:color/black"
+            android:layout_marginBottom="@dimen/activity_default_margin" />
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/activity_default_margin"
+            android:shrinkColumns="*"
+            android:stretchColumns="*">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@android:style/TextAppearance.Medium"
+                android:layout_marginBottom="@dimen/activity_default_margin"
+                android:text="@string/choose_label" />
+
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/activity_default_margin"
+                android:background="@android:color/white">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:text="@string/car_label"
+                    android:paddingLeft="@dimen/activity_default_margin"
+                    android:layout_span="@integer/first_item_span"
+                    style="@android:style/TextAppearance.Small"
+                    android:labelFor="@+id/question" />
+
+                <Spinner
+                    android:id="@+id/car_spinner"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_span="@integer/second_item_span"
+                    android:entries="@array/car_array"/>
+            </TableRow>
+
+        </TableLayout>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/send_label"
+            android:layout_gravity="center"/>
+    </LinearLayout>
+</ScrollView>

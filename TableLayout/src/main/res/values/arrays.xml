@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="sex_array">
+        <item>Male</item>
+        <item>Female</item>
+    </string-array>
+
+    <string-array name="car_array">
+        <item>Mercedes</item>
+        <item>BMW</item>
+        <item>Ford</item>
+        <item>Ferrari</item>
+    </string-array>
+</resources>

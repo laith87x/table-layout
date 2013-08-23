@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer name="first_item_span">2</integer>
+    <integer name="second_item_span">3</integer>
+</resources>

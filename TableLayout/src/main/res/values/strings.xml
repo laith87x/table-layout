@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Table Layout</string>
+    <string name="who_label">Who are you?</string>
+    <string name="name_label">Name:</string>
+    <string name="phone_label">Phone:</string>
+    <string name="sex_label">Sex:</string>
+    <string name="choose_label">Choose your car</string>
+    <string name="car_label">Car:</string>
+    <string name="send_label">Send</string>
+</resources>
